@@ -11,7 +11,7 @@ export default function LoginPage() {
   const auth = getAuth(app);
   const router = useRouter();
 
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
@@ -21,10 +21,11 @@ export default function LoginPage() {
     setError('');
 
     try {
-      await signInWithEmailAndPassword(auth, username, password);
+      await signInWithEmailAndPassword(auth, email, password);
       router.push('/dashboard'); // Redirect on success
     } catch (err) {
-      setError('Username atau password salah!');
+      setError('email atau password salah!');
+      throw(err);
     }
   };
 
@@ -43,13 +44,13 @@ export default function LoginPage() {
 
         <form onSubmit={handleLogin}>
           <div className="mt-6 text-left">
-            <label className="text-gray-700 text-sm font-semibold">USERNAME</label>
+            <label className="text-gray-700 text-sm font-semibold">EMAIL</label>
             <input
               type="email"
               placeholder="Masukkan email anda"
               className="w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
