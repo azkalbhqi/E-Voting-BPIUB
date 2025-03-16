@@ -46,7 +46,7 @@ export default function TataTertibPage() {
         </div>
 
         <div className="mt-8 flex justify-center gap-4">
-          <Link href="/register" className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Daftar Lurah</Link>
+          <Link href="/daftar-lurah" className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Daftar Lurah</Link>
         </div>
       </div>
     </div>
