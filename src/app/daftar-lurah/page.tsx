@@ -8,51 +8,51 @@ import { collection, addDoc } from 'firebase/firestore';
 import { useRouter } from "next/navigation"; // Import useRouter
 
 export default function FormulirLurah() {
-  const [nama, setNama] = useState('');
-  const [nomorInduk, setNomorInduk] = useState('');
-  const [noWhatsapp, setNoWhatsapp] = useState('');
-  const [persetujuan, setPersetujuan] = useState(false);
-  const [error, setError] = useState('');
-  const router = useRouter(); // Initialize router
+  // const [nama, setNama] = useState('');
+  // const [nomorInduk, setNomorInduk] = useState('');
+  // const [noWhatsapp, setNoWhatsapp] = useState('');
+  // const [persetujuan, setPersetujuan] = useState(false);
+  // const [error, setError] = useState('');
+  // const router = useRouter(); // Initialize router
   
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
     
-    if (!persetujuan) {
-      setError("Anda harus menyetujui semua pernyataan untuk mendaftar.");
-      return;
-    }
+  //   if (!persetujuan) {
+  //     setError("Anda harus menyetujui semua pernyataan untuk mendaftar.");
+  //     return;
+  //   }
   
-    setError("");
+  //   setError("");
   
-    try {
-      await addDoc(collection(db, "pendaftaran_lurah"), {
-        nama,
-        nomorInduk,
-        noWhatsapp,
-        timestamp: new Date(),
-      });
+  //   try {
+  //     await addDoc(collection(db, "pendaftaran_lurah"), {
+  //       nama,
+  //       nomorInduk,
+  //       noWhatsapp,
+  //       timestamp: new Date(),
+  //     });
   
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Data Berhasil Terkirim",
-        showConfirmButton: false,
-        timer: 1500,
-      }).then(() => {
-        // Redirect user after success alert
-        router.push("/dashboard"); // Change to your target page
-      });
+  //     Swal.fire({
+  //       position: "center",
+  //       icon: "success",
+  //       title: "Data Berhasil Terkirim",
+  //       showConfirmButton: false,
+  //       timer: 1500,
+  //     }).then(() => {
+  //       // Redirect user after success alert
+  //       router.push("/dashboard"); // Change to your target page
+  //     });
   
-      setNama("");
-      setNomorInduk("");
-      setNoWhatsapp("");
-      setPersetujuan(false);
-    } catch (error) {
-      console.error("Error menambahkan data: ", error);
-      setError("Gagal mengirim data. Coba lagi.");
-    }
-  };
+  //     setNama("");
+  //     setNomorInduk("");
+  //     setNoWhatsapp("");
+  //     setPersetujuan(false);
+  //   } catch (error) {
+  //     console.error("Error menambahkan data: ", error);
+  //     setError("Gagal mengirim data. Coba lagi.");
+  //   }
+  // };
   
 
   return (
