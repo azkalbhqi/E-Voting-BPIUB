@@ -1,7 +1,7 @@
 'use client';
 
 import Swal from 'sweetalert2'
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useState } from 'react';
 import { db } from '../../lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
