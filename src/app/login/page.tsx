@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { app } from '../../../lib/firebase';
+import { app } from '../../lib/firebase';
 
 export default function LoginPage() {
   const auth = getAuth(app);

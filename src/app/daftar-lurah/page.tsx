@@ -3,7 +3,7 @@
 import Swal from 'sweetalert2'
 import Image from 'next/image';
 import { useState } from 'react';
-import { db } from '../../../lib/firebase';
+import { db } from '../../lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { useRouter } from "next/navigation"; // Import useRouter
 
@@ -57,7 +57,11 @@ export default function FormulirLurah() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 shadow-lg rounded-2xl w-fit text-center">
+      <div className='flex-col text-center gap-5'>
+        <h1 className='font-bold text-4xl'>Pendaftaran telah ditutup</h1>
+        <p className='font-semibold text-2xl'>Nantikan Kampanye dan Pemilihan Calon Lurah BPI UB 4.0</p>
+      </div>
+      {/* <div className="bg-white p-8 shadow-lg rounded-2xl w-fit text-center">
       <div className="flex justify-center mb-4">
           <Image src="/assets/logotype_bpi.png" alt="Logo" width={250} height={50} />
         </div>
@@ -126,7 +130,7 @@ export default function FormulirLurah() {
             Daftar
           </button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }
