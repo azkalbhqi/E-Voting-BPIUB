@@ -44,8 +44,11 @@ const Navbar = () => {
           <li>
             <Link href="/a" className="text-gray-700 hover:text-blue-500">Statistics</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/daftar-lurah" className="text-gray-700 hover:text-blue-500">Daftar Lurah</Link>
+          </li> */}
+          <li>
+            <Link href="/kampanye" className="text-gray-700 hover:text-blue-500">Kampanye</Link>
           </li>
         </ul>
 
