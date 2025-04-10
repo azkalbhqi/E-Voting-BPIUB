@@ -22,7 +22,7 @@ export default function Paslon1Page() {
           <div className="w-full md:w-2/3 space-y-4">
             <div>
               <h1 className="text-2xl font-bold"> Ir. Harmoko, S.Pt., M.P., IPP</h1>
-              <p className="text-gray-600">Fakultas Pertanian</p>
+              <p className="text-gray-600">Fakultas Peternakan</p>
             </div>
 
             <div>
