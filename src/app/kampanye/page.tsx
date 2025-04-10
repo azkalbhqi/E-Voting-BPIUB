@@ -34,7 +34,7 @@ const Page = () => {
               <Image src="/assets/2.png" alt="Paslon 2" fill className="object-cover" />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white text-center p-4">
                 <h2 className="text-xl font-bold">Harry Kurniawan</h2>
-                <p className="text-sm mt-1">Fakultas Peternakan</p>
+                <p className="text-sm mt-1">Fakultas Teknik</p>
               </div>
             </div>
             <div className="p-4">
