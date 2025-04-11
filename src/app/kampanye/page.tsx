@@ -19,10 +19,14 @@ const Page = () => {
               </div>
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
                 Harmoko
               </h3>
-              <p className="text-sm text-gray-500">Fakultas Peternakan</p>
+              <p className="text-lg text-gray-500">Fakultas Peternakan</p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm py-2 text-blue-500 group-hover:text-base transition-all">Lihat Kampanye</p>
+                <p className="text-2xl hidden group-hover:flex transition-all">⏭️</p>
+              </div>
             </div>
           </div>
         </Link>
@@ -38,10 +42,14 @@ const Page = () => {
               </div>
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
                 Harry Kurniawan
               </h3>
-              <p className="text-sm text-gray-500">Fakultas Teknik</p>
+              <p className="text-lg text-gray-500">Fakultas Teknik</p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm py-2 text-blue-500 group-hover:text-base transition-all">Lihat Kampanye</p>
+                <p className="text-2xl hidden group-hover:flex transition-all">⏭️</p>
+              </div>
             </div>
           </div>
         </Link>
