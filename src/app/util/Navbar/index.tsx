@@ -39,10 +39,10 @@ const Navbar = () => {
             <Link href="/" className="text-gray-700 hover:text-blue-500">Home</Link>
           </li>
           <li>
-            <Link href="/a" className="text-gray-700 hover:text-blue-500">E-Voting</Link>
+            <Link href="/vote" className="text-gray-700 hover:text-blue-500">E-Voting</Link>
           </li>
           <li>
-            <Link href="/a" className="text-gray-700 hover:text-blue-500">Statistics</Link>
+            <Link href="/statistics" className="text-gray-700 hover:text-blue-500">Statistics</Link>
           </li>
           {/* <li>
             <Link href="/daftar-lurah" className="text-gray-700 hover:text-blue-500">Daftar Lurah</Link>

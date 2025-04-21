@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function VoteStatistics() {
   const [vote1Count, setVote1Count] = useState(0);
   const [vote2Count, setVote2Count] = useState(0);
-  const [vote3Count, setVote3Count] = useState(0);
+  // const [vote3Count, setVote3Count] = useState(0);
   const maxVotes = 290; // Ubah sesuai kebutuhan
 
   useEffect(() => {
@@ -24,13 +24,13 @@ export default function VoteStatistics() {
           const data = doc.data();
           if (data.vote == 1) countVote1++;
           if (data.vote == 2) countVote2++;
-          if (data.vote == 3) countVote3++;
+          // if (data.vote == 3) countVote3++;
 
         });
 
         setVote1Count(countVote1);
         setVote2Count(countVote2);
-        setVote3Count(countVote3);
+        // setVote3Count(countVote3);
       } catch (error) {
         console.error("Error fetching votes:", error);
       }
@@ -44,7 +44,7 @@ export default function VoteStatistics() {
   const chartData = [
     { name: "Vote 1", value: vote1Count },
     { name: "Vote 2", value: vote2Count },
-    { name: "Vote 3", value: vote3Count },
+    // { name: "Vote 3", value: vote3Count },
   ];
 
   return (

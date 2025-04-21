@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-              Kampanye Lurah BPI UB 4.0
+              Pemilihan Lurah BPI UB 4.0
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
               Siapkan Regenerasi untuk Majukan Generasi
