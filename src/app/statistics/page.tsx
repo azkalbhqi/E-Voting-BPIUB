@@ -18,7 +18,7 @@ export default function VoteStatistics() {
         const votesSnapshot = await getDocs(collection(db, "vote1"));
         let countVote1 = 0;
         let countVote2 = 0;
-        let countVote3 = 0;
+        // let countVote3 = 0;
 
         votesSnapshot.forEach((doc) => {
           const data = doc.data();
