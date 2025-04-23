@@ -5,6 +5,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function VoteStatistics() {
   const [vote1Count, setVote1Count] = useState(0);
@@ -70,6 +71,13 @@ export default function VoteStatistics() {
           <span className="px-4 py-2 bg-gray-300 rounded">vote 2</span> */}
         </div>
       </CardContent>
+
+      <Link 
+        href="/hasil"
+        className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+      >
+        Lihat Pemenang
+      </Link>
     </Card>
   );
 }
