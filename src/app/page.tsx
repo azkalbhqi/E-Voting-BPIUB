@@ -41,7 +41,7 @@ export default function Home() {
               >
                 Lihat Kampanye
               </Link>
-              <Link href="/vote" className="text-sm/6 font-semibold text-gray-900">
+              <Link href="/voted" className="text-sm/6 font-semibold text-gray-900">
                 Vote Lurah <span aria-hidden="true">→</span>
               </Link>
             </div>

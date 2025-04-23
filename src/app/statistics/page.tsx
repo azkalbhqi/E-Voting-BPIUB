@@ -42,8 +42,8 @@ export default function VoteStatistics() {
   const totalVotes = vote1Count + vote2Count;
 
   const chartData = [
-    { name: "Vote 1", value: vote1Count },
-    { name: "Vote 2", value: vote2Count },
+    { name: "Harmoko", value: vote1Count },
+    { name: "Harry Kurniawan", value: vote2Count },
     // { name: "Vote 3", value: vote3Count },
   ];
 
